@@ -1,0 +1,52 @@
+<!-- res/layout/fragment_rules.xml -->
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/tv_rules"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:paddingBottom="16dp"
+        android:text="Tic Tac Toe Rules"
+        android:textAppearance="?attr/textAppearanceHeadline6"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_rules_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:padding="8dp"
+        android:text="1. The game is played on a grid that's 3 squares by 3 squares.\n\n2. Player 1 is X, and Player 2 is O. Players take turns putting their marks in empty squares.\n\n3. The first player to get 3 of their marks in a row (up, down, across, or diagonally) is the winner.\n\n4. When all 9 squares are full, the game is over. If no player has 3 marks in a row, the game ends in a draw."
+        app:layout_constraintLeft_toLeftOf="@id/tv_rules"
+
+        app:layout_constraintRight_toRightOf="@id/tv_rules"
+        app:layout_constraintTop_toTopOf="@id/tv_rules" />
+
+    <Button
+        android:id="@+id/okBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginTop="180dp"
+        android:text="OK"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintLeft_toLeftOf="@id/tv_rules_content"
+        app:layout_constraintRight_toRightOf="@id/tv_rules_content"
+        app:layout_constraintTop_toTopOf="@id/tv_rules_content" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
